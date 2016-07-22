@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/huntriver/myWebSite.git"
   },
+  "engines": {
+    "node": "4.4.7"
+  },
   "author": "Xinhe Huang",
   "license": "ISC",
   "bugs": {
