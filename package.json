@@ -1,0 +1,25 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huntriver/myWebSite.git"
+  },
+  "author": "Xinhe Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huntriver/myWebSite/issues"
+  },
+  "homepage": "https://github.com/huntriver/myWebSite#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "nodemailer": "^2.5.0"
+  }
+}

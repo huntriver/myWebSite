@@ -1,0 +1,80 @@
+<div class="homePage" ng-controller="homeCtrl">
+
+
+    <section id="intro-section">
+
+        <div class="wrapper">
+            <div class="lead">
+                <p>hi I'm Xinhe</p>
+                <p>I am a coder and designer.</p>
+                <p>I like creating fun and beautiful work</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="project-section">
+        <div class="wrapper">
+            <div class="row">
+                <h2 class="title">my recent projects</h2>
+            </div>
+            <div class="row">
+                <div ng-repeat="proj in projects" class="col-sm-6 col-md-4 col-xs-12">
+                    <div class="projectContainer">
+                        <div class="hovereffect">
+                            <!--<a ng-href="{{proj.link}}" target="_blank">-->
+                            <img class="img-responsive" ng-src="{{proj.img}}" alt=""/>
+                            <div class="overlay">
+                                <h2>{{proj.name}}</h2>
+                                <p>
+
+                                    <a class="info" ng-href="{{proj.link}}" target="_blank">{{proj.description}}</a>
+                                </p>
+                            </div>
+                            <!--</a>-->
+                            <!--<div class="project-name">{{proj.name}}</div>-->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-xs-12">
+                    <div class="projectContainer">
+                        <p id="tbc">TO BE CONTINUED...</p>
+                    </div>
+                    .
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="skill-section" my-waypoint>
+        <div class="wrapper">
+            <div class="row">
+                <h2 class="title">my skills</h2>
+            </div>
+            <div class="row">
+
+                <div bar-chart data="bardata" config="barconfig" animation="animation" style="width:70%;margin:0 auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-section">
+        <div class="wrapper">
+            <div class="row">
+                <h2 class="title">About me</h2>
+            </div>
+            <div class="row">
+
+                <p>
+                    Xinhe Huang is a 23 years old web developer and ui/ux designer. He received his master's degree from
+                    Stony Brook University in 2016. I am self-taught and constantly learning. I am always looking for a
+                    new challenge!
+                </p>
+            </div>
+        </div>
+    </section>
+
+</div>
