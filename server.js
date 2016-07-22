@@ -10,6 +10,7 @@ var app = express();                               // create our app w/ express
 // var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 
 // configuration =================
+app.set('port', (process.env.PORT || 5000));
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
@@ -21,8 +22,15 @@ app.use(express.static(__dirname + '/public'));                 // set the stati
 // app.use(methodOverride());
 
 // listen (start app with node server.js) ======================================
-app.listen(7000);
-console.log("App listening on port 7000");
+app.get('/', function(request, response) {
+  response.render('index.html');
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+
+
 
 var nodemailer = require('nodemailer');
 app.post('/contact', function (req, res) {
