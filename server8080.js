@@ -10,7 +10,7 @@ var app = express();                               // create our app w/ express
 // var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 
 // configuration =================
-app.set('port', (process.env.PORT || 80));
+app.set('port', (process.env.PORT || 8080));
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
