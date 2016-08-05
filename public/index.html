@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body ng-controller="MainCtrl">
 <header>
     <!--<div class="wrapper">-->
         <!--<nav id='myNavBar' >-->
@@ -57,9 +57,9 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                    <li ui-sref-active="active"><a ui-sref="home" ><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
                     <!--<li ui-sref-active="active"><a ui-sref="about">About</a></li>-->
-                    <li ui-sref-active="active"><a ui-sref="contact">Contact</a></li>
+                    <li ui-sref-active="active"><a ui-sref="contact" >Contact</a></li>
                 </ul>
             </div>
         </div>
